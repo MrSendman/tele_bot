@@ -1,5 +1,5 @@
 import telebot
-import config
+from config imort load_config
 from telebot import types # buttons
 from string import Template
 
