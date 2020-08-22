@@ -200,7 +200,7 @@ def process_finalP_step(message):
         chat_id = message.chat.id
         user = user_dict[chat_id]
         keyboard = types.InlineKeyboardMarkup()
-        url_button = types.InlineKeyboardButton(text="Перейти до оплати", url="http://secure.wayforpay.com/button/bc6489c224a69")
+        url_button = types.InlineKeyboardButton(text="Перейти до оплати", url="http://secure.wayforpay.com/button/b083da34b089d")
         keyboard.add(url_button)
         bot.send_message(message.chat.id, "Привіт! А ось і час оплати.", reply_markup=keyboard)     
         # ваша заявка "Имя пользователя"
