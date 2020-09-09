@@ -308,7 +308,7 @@ def mailing_text(message):
 @bot.message_handler(content_types=["photo"])
 def mailing_photo(message):
     if int(message.chat.id) == int(config.owner_id):
-        chat_id = '381202871'
+        chat_id = config.owner_id
         msg = message.message_id
         users = open('users.txt', 'r')
         for user in users:
